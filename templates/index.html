@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>Головна сторінка сайту | Реєстрація чи вхід</title>
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="index-page">
+	<div class="left_page">
+		<div class="form_container">
+			<div class="block_form">
+				<div class="title_form">
+					<h2>Welcome</h2>
+					<p>Let's create your account</p>
+				</div>
+				<div class="content_form">
+					<form action="" method="POST">
+						<input 
+							name="username" 
+							class="input_data input_username" 
+							type="text" 
+							placeholder="username"
+							required
+						>
+						<input 
+							name="name" 
+							class="input_data input_name" 
+							type="text" 
+							placeholder="name"
+							required
+						>
+						<input 
+							name="surname" 
+							class="input_data input_surname" 
+							type="text" 
+							placeholder="surname"
+							required
+						>
+						<input 
+							name="email" 
+							class="input_data input_email" 
+							type="email" 
+							placeholder="email"
+							required
+						>
+						<input 
+							name="password" 
+							class="input_data input_pass" 
+							type="password" 
+							placeholder="password"
+							maxlength="30"
+							required
+						>
+
+						<input class="input_data input_submit" type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right_page"></div>
+</div>
+
+
+{% endblock %}
