@@ -32,11 +32,11 @@ def indexView():
 	if request.method == 'POST':
 		data = {}
 
-		data['username'] = request.form.get('username')
-		data['name'] = request.form.get('name')
-		data['surname'] = request.form.get('surname')
-		data['email'] = request.form.get('email')
-		data['password'] = request.form.get('password')
+		data['username'] 	= request.form.get('username')
+		data['name'] 		= request.form.get('name')
+		data['surname'] 	= request.form.get('surname')
+		data['email'] 		= request.form.get('email')
+		data['password'] 	= request.form.get('password')
 
 		data_users = User.query.all()
   
